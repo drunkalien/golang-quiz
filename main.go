@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -27,7 +28,7 @@ func main() {
 
 	for i < len(data) {
 		fmt.Println(data[i][0])
-		if readUserInput(&input); input == "Q" {
+		if readUserInput(&input); strings.ToLower(input) == "q" {
 			break
 		}
 
